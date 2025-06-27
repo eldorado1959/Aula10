@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alternar Visibilidade</title>
+  <style>
+    #paragrafo {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="alternarVisibilidade()">Mostrar/Esconder</button>
+
+  <p id="paragrafo">Este é um texto de exemplo que pode ser mostrado ou escondido.</p>
+
+  <script>
+    function alternarVisibilidade() {
+      const paragrafo = document.getElementById("paragrafo");
+
+      if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+      } else {
+        paragrafo.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

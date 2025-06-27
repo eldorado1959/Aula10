@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mostrar Texto ao Digitar</title>
+</head>
+<body>
+
+  <h2>Digite algo abaixo:</h2>
+
+  <input type="text" id="entrada" placeholder="Digite aqui..." />
+  <p id="saida"></p>
+
+  <script>
+    const input = document.getElementById("entrada");
+    const paragrafo = document.getElementById("saida");
+
+    input.addEventListener("keyup", function () {
+      paragrafo.textContent = input.value;
+    });
+  </script>
+
+</body>
+</html>

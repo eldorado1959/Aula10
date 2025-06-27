@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão Mudar Tema</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      transition: 0.3s;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .escuro {
+      background-color: black;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #444;
+      color: white;
+    }
+
+    .escuro button {
+      background-color: #ccc;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="mudarTema()">Mudar tema</button>
+
+  <h2>Exemplo de Tema Claro/Escuro</h2>
+  <p>Este texto muda de cor junto com o fundo!</p>
+
+  <script>
+    function mudarTema() {
+      document.body.classList.toggle("escuro");
+    }
+  </script>
+
+</body>
+</html>

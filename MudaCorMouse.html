@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mudar Cor com Mouse</title>
+  <style>
+    #caixa {
+      width: 200px;
+      height: 200px;
+      background-color: gray;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Passe o mouse sobre a caixa</h2>
+
+  <div id="caixa"></div>
+
+  <script>
+    const caixa = document.getElementById("caixa");
+
+    // Quando o mouse entra na div
+    caixa.addEventListener("mouseover", function() {
+      caixa.style.backgroundColor = "blue";
+    });
+
+    // Quando o mouse sai da div
+    caixa.addEventListener("mouseout", function() {
+      caixa.style.backgroundColor = "gray";
+    });
+  </script>
+
+</body>
+</html>
